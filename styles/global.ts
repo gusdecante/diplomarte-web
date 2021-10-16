@@ -33,4 +33,9 @@ export default createGlobalStyle`
     max-width: 100%;
     display: block;
   }
+
+  nav, footer {
+    background-color: lightgreen;
+    color: white;
+  }
 `

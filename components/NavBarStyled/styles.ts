@@ -2,7 +2,6 @@ import styled from 'styled-components'
 //import { colors } from '../../styles'
 
 export const NavStyled = styled.nav`
-  background-color: lightgreen;
   display: flex;
   justify-content: space-between;
   padding: 2em 4em;

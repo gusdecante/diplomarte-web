@@ -1,6 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { NavBarStyled } from '../components'
+import {
+  CarouselStyled,
+  NavBarStyled,
+  AnnouncementCardStyled,
+  FooterStyled,
+  MainInfoStyled,
+  SectionStyled,
+  MainGridStyled,
+} from '../components'
 
 const Home: NextPage = () => {
   return (
@@ -12,9 +20,19 @@ const Home: NextPage = () => {
       </Head>
 
       <NavBarStyled />
-      <main></main>
+      <main>
+        <MainInfoStyled />
 
-      <footer></footer>
+        <SectionStyled sectionName="Classificados">
+          <MainGridStyled />
+        </SectionStyled>
+
+        <SectionStyled sectionName="Depoimentos">
+          <CarouselStyled />
+        </SectionStyled>
+      </main>
+
+      <FooterStyled />
     </div>
   )
 }
